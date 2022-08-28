@@ -4,9 +4,6 @@ on:
     branches:
       - master
       - cheatsheet*
-    paths:
-      - './README.md'
-      - './artwork/**'
 jobs:
   # This workflow contains a single job called "build"
   build:
