@@ -4,11 +4,11 @@ on:
     branches:
       - master
       - cheatsheet*
-    paths:
+     paths:
       - ./README.md
       - ./artwork/**
       
-    paths-ignore:
+     paths-ignore:
       - '**/*.yml'  
 jobs:
   # This workflow contains a single job called "build"
