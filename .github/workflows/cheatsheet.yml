@@ -5,8 +5,8 @@ on:
       - master
       - cheatsheet*
     paths:
-      - ./README.md
-      - ./artwork/**
+      - './README.md'
+      - './artwork/**'
       - '!**/*.yml'  
 jobs:
   # This workflow contains a single job called "build"
