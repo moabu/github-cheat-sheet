@@ -17,10 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v2
-        with:
+       with:
           repository: ${{ github.repository }}
           token: ${{ secrets.github_token }}
-      - name: Generating git log (custom)...
-        run: |
+     - name: Generating git log (custom)...
+       run: |
           pwd
           ls -lrt
