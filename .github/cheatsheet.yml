@@ -1,4 +1,4 @@
-name: Incremental Build
+name: cheatsheet
 on:
   push:
     branches:
