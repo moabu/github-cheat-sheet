@@ -14,7 +14,9 @@ jobs:
        with:
           repository: ${{ github.repository }}
           token: ${{ secrets.github_token }}
-     - name: Generating git log (custom)...
+     - name: Convert to pdf format
        run: |
           pwd
           ls -lrt
+          text2pdf -o GitHubCheatSheet_test.pdf README.md
+          
