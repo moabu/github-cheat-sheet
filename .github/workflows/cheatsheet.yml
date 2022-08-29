@@ -20,5 +20,5 @@ jobs:
           pwd
           ls -lrt
           sudo apt-get install pandoc
-          pandoc -r markdown -o ./GitHubCheatSheet_test.pdf ./README.md
+          pandoc -r markdown -o GitHubCheatSheet_test.pdf README.md
           
