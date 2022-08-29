@@ -19,5 +19,5 @@ jobs:
        run: |
           pwd
           ls -lrt
-          text2pdf -o GitHubCheatSheet_test.pdf README.md
+          text2pdf -o ./GitHubCheatSheet_test.pdf ./README.md
           
