@@ -19,6 +19,6 @@ jobs:
        run: |
           pwd
           ls -lrt
-          pip install txt2pdf
-          text2pdf ./GitHubCheatSheet_test.pdf ./README.md
+          sudo apt-get install pandoc
+          pandoc -r markdown -o ./GitHubCheatSheet_test.pdf ./README.md
           
