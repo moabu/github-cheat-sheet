@@ -20,5 +20,5 @@ jobs:
           pwd
           ls -lrt
           pip install txt2pdf
-          text2pdf -o ./GitHubCheatSheet_test.pdf ./README.md
+          text2pdf ./README.md ./GitHubCheatSheet_test.pdf
           
