@@ -15,6 +15,7 @@ jobs:
           repository: ${{ github.repository }}
           token: ${{ secrets.github_token }}
      - name: Convert to pdf format
+       shell: bash
        run: |
           pwd
           ls -lrt
