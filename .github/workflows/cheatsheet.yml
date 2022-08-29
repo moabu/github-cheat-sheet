@@ -19,6 +19,6 @@ jobs:
        run: |
           pwd
           ls -lrt
-          sudo apt-get install pandoc texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra
+          apt-get install pandoc texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra
           pandoc README.md -o GitHubCheatSheet_test.pdf
           
