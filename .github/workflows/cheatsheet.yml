@@ -19,6 +19,7 @@ jobs:
        run: |
           pwd
           ls -lrt
+          sudo apt install texlive-latex-base
           sudo apt-get install pandoc
           pandoc -r markdown -o GitHubCheatSheet_test.pdf README.md
           
