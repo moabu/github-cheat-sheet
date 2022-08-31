@@ -23,5 +23,10 @@ jobs:
           md-to-pdf --stylesheet "README.md" > ./GitHubCheatSheet_test.pdf
           pwd
           ls -lrt
+          git config --global hub.protocol https
+          git remote set-url --push origin "https://SESA551137:${GITHUB_TOKEN}@github.com/bFO-dev/Platform.git"
+          git config --global user.name 'moabu'
+          git config --global user.email 'madhavylatha03@gmail.com'
           git branch
+          git status
           
