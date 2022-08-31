@@ -24,9 +24,13 @@ jobs:
           pwd
           ls -lrt
           git config --global hub.protocol https
-          git remote set-url --push origin "https://SESA551137:${GITHUB_TOKEN}@github.com/bFO-dev/Platform.git"
+          git remote set-url --push origin "https://moabu:${github_token}@github.com/moabu/github-cheat-sheet.git"
           git config --global user.name 'moabu'
           git config --global user.email 'madhavylatha03@gmail.com'
           git branch
           git status
+          pwd
+          git add .
+          git commit -m "generated GitHubCheatSheet test pdf file `date`"
+          git push origin
           
