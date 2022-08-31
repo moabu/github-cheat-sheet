@@ -21,4 +21,6 @@ jobs:
           ls -lrt
           npm install -g md-to-pdf
           md-to-pdf --stylesheet "README.md" > ./GitHubCheatSheet_test.pdf
+          pwd
+          ls -lrt
           
