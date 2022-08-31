@@ -23,4 +23,5 @@ jobs:
           md-to-pdf --stylesheet "README.md" > ./GitHubCheatSheet_test.pdf
           pwd
           ls -lrt
+          git branch
           
