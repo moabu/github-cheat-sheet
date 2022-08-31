@@ -20,7 +20,7 @@ jobs:
           pwd
           ls -lrt
           npm install -g md-to-pdf
-          md-to-pdf --stylesheet "README.md" > ./GitHubCheatSheet_test.pdf
+          md-to-pdf "README.md" > ./GitHubCheatSheet_test.pdf
           pwd
           ls -lrt
           git config --global hub.protocol https
