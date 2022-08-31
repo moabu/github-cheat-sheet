@@ -14,12 +14,16 @@ jobs:
        with:
           repository: ${{ github.repository }}
           token: ${{ secrets.github_token }}
+     - name: install libraries
+       shell: bash
+       run: |
+          npm install -g md-to-pdf
+          
      - name: Convert to pdf format
        shell: bash
        run: |
           pwd
-          ls -lrt
-          npm install -g md-to-pdf
+          ls -lrt          
           cat "README.md" | md-to-pdf  > ./GitHubCheatSheet_test.pdf
           pwd
           ls -lrt
@@ -33,4 +37,4 @@ jobs:
           git add .
           git commit -m "generated GitHubCheatSheet test pdf file `date`"
           git push origin
-          
+         
