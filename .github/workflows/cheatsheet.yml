@@ -1,9 +1,6 @@
 name: cheatsheet
 on:
   push:
-    branches:
-      - master
-      - cheatsheet*
     paths:
      - 'README.md'
 jobs:
